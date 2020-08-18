@@ -2,7 +2,10 @@
 ## functions do
 
 ## Write a short comment describing this function
+## to define the matrix, get the matrix, calculate the inverse of the matrix and 
+## get the inverse of the matrix.
 
+## solve() is the function used to find the inverse of a matrix
 makeCacheMatrix <- function(x = matrix()) {
   inv<-NULL
   set<-function(y){
@@ -18,6 +21,9 @@ makeCacheMatrix <- function(x = matrix()) {
 
 
 ## Write a short comment describing this function
+## It first checks to see if the inverse has already been calculated. If so, it gets 
+## the inverse from the cache and skips the computation. Otherwise, it calculates the 
+## inverse of the matrix and sets the inverse to the cache via the setsolve function.
 
 cacheSolve <- function(x, ...) {
   inv<-x$getInverse()
